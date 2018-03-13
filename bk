@@ -1,0 +1,51 @@
+import csv 
+from datetime import datetime 
+from pprint import pprint 
+In [ ]: def print_first_point(filename): 
+""" This function prints and returns the first data point (second row) from a csv file that includes a header row.
+ city = filename.split('-')[0].split('/')[-1]
+ print('\nCity: {}'.format(city))
+with open(filename, 'r') as f_in: 
+trip_reader 
+first_trip =
+return (city, first_trip)
+data_files = ['./data/NYC-CitiBike-2016.csv',
+'./data/Chicago-Divvy-2016.csv', 
+'./data/Washington-CapitalBikeshare-2016.csv',]
+example_trips = {} for data_file in data_files:
+city, first_trip = print_first_point(data_file)
+example_trips[city] = first_trip
+In [ ]: def duration_in_mins(datum, city)
+
+
+
+
+
+
+
+
+return duration
+tests = {'NYC': 13.9833,
+
+'Chicago': 15.4333, 
+'Washington': 7.1231}
+for city in tests:
+assert abs(duration_in_mins(example_trips[city], city) - tests[city]) < .001
+In [ ]: def time_of_trip(datum, city): 
+
+
+
+
+
+
+
+
+
+
+
+for city in tests: 
+assert time_of_trip(example_trips[city], city) == tests[city]
+In [ ]: def type_of_user(datum, city): 
+
+
+
